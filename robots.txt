@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://roadtrip-europa.de/sitemap.xml
+
+# Optimiert für Crawling-Effizienz
+Crawl-delay: 1
+
+# Keine Duplikate indizieren
+Disallow: */amp/
+Disallow: */print/
+Disallow: */pdf/
+
+# Admin-Bereiche schützen
+Disallow: /admin/
+Disallow: /wp-admin/

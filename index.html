@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping mit Hund - Tipps, Checkliste & hundefreundliche Plätze</title>
+    <meta name="description" content="Entdecke die besten Tipps und eine praktische Checkliste für deinen Campingurlaub mit Hund. Plus: Top 3 der hundefreundlichsten Campingplätze in Europa.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Camping mit Hund - Tipps, Checkliste & hundefreundliche Plätze">
+    <meta property="og:description" content="Entdecke die besten Tipps und eine praktische Checkliste für deinen Campingurlaub mit Hund. Plus: Top 3 der hundefreundlichsten Campingplätze in Europa.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://roadtrip-europa.de/camping-mit-hund">
+    <meta property="og:image" content="https://roadtrip-europa.de/images/hero.webp">
+    <link rel="canonical" href="https://roadtrip-europa.de/camping-mit-hund">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐕</text></svg>">
+    <style>
+        /* Variables */
+        :root {
+            --color-background: #fdfdfd;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-accent: #3e7e6b;
+            --color-accent-light: #5a9a87;
+            --color-sand: #f5f5f5;
+            --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --border-radius: 8px;
+            --max-width: 1200px;
+            --spacing: clamp(1rem, 5vw, 2rem);
+            --font-size-base: clamp(1rem, 1vw + 0.75rem, 1.125rem);
+        }
+
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            display: block;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--color-accent-light);
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Header styles */
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--color-sand);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-emoji {
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero section */
+        .hero {
+            padding: calc(2 * var(--spacing)) 0;
+            text-align: center;
+            background-color: var(--color-sand);
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            margin: 0 auto 2rem;
+            max-width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            color: var(--color-text);
+        }
+
+        .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-accent-light);
+            color: white;
+        }
+
+        /* Content sections */
+        section {
+            padding: calc(1.5 * var(--spacing)) 0;
+            border-bottom: 1px solid var(--color-sand);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+        }
+
+        h3 {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        /* Checklist section */
+        .checklist-item {
+            background-color: var(--color-sand);
+            padding: 1.25rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .checklist-icon {
+            flex-shrink: 0;
+            color: var(--color-accent);
+            font-size: 1.5rem;
+        }
+
+        .checklist-content {
+            flex-grow: 1;
+        }
+
+        .checklist-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Places section */
+        .places-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .place-item {
+            background-color: var(--color-sand);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .place-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .place-content {
+            padding: 1.5rem;
+        }
+
+        .place-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .place-location {
+            color: var(--color-text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .place-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .place-feature {
+            background-color: rgba(62, 126, 107, 0.1);
+            color: var(--color-accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--color-sand);
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        /* Download section */
+        .download-section {
+            text-align: center;
+            padding: calc(2 * var(--spacing)) 0;
+            background-color: var(--color-sand);
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+
+        .download-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: var(--spacing) 0;
+            margin-top: calc(2 * var(--spacing));
+            background-color: var(--color-sand);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .places-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">
+                    <span class="logo-emoji">🐕</span>
+                    <span>Roadtrip Europa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#checkliste">Checkliste</a></li>
+                    <li><a href="#platze">Stellplätze</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="/api/placeholder/800/450" alt="Hund am Camper bei Sonnenuntergang" class="hero-image">
+                <h1>Camping mit Hund – Tipps, Checkliste & hundefreundliche Plätze</h1>
+                <p class="subtitle">So wird der Campingurlaub für Zwei- und Vierbeiner zum unvergesslichen Erlebnis</p>
+                <a href="#download" class="cta-button">Checkliste als PDF herunterladen</a>
+            </div>
+        </section>
+
+        <article class="container">
+            <!-- Introduction Section -->
+            <section>
+                <h2>Warum Camping mit Hund immer beliebter wird</h2>
+                <p>Immer mehr Hundebesitzer entdecken die Freiheit des Campings mit ihrem vierbeinigen Begleiter. Die Vorteile liegen auf der Hand: Kein Suchen nach hundefreundlichen Hotels, keine Trennung vom geliebten Vierbeiner und vor allem die Möglichkeit, die Natur gemeinsam zu erleben. Laut aktuellen Umfragen nehmen über 68% der Camper ihren Hund mit auf Reisen – Tendenz steigend.</p>
+                <p>Der Campingurlaub mit Hund bietet die perfekte Mischung aus Abenteuer und Komfort. Ihr Hund kann den ganzen Tag bei Ihnen sein, neue Umgebungen erkunden und gleichzeitig haben Sie Ihre vertraute Unterkunft immer dabei. Dies reduziert Stress für den Hund und sorgt für eine entspannte Urlaubsatmosphäre.</p>
+                <p>Allerdings erfordert das Camping mit Hund auch eine gute Vorbereitung. Von der richtigen Ausrüstung über die Auswahl hundefreundlicher Stellplätze bis hin zu Sicherheitsvorkehrungen – es gibt einige Dinge zu beachten, damit der Urlaub für Mensch und Tier zum Erfolg wird.</p>
+            </section>
+
+            <!-- Checklist Section -->
+            <section id="checkliste">
+                <h2>Checkliste: Das muss mit für den Hund</h2>
+                <p>Eine gute Vorbereitung ist die halbe Miete. Mit dieser Packliste vergessen Sie garantiert nichts Wichtiges für Ihren vierbeinigen Begleiter:</p>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Futter & Wasser</div>
+                        <p>Ausreichend gewohntes Futter (plus Reserve), Näpfe für Futter und Wasser, Wasserkanister mit Frischwasser, Leckerlis für unterwegs</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Papiere & Medizin</div>
+                        <p>EU-Heimtierausweis mit aktuellen Impfungen, Haftpflichtversicherungsnachweis, gewohnte Medikamente, kleine Hundapotheke (Zeckenzange, Verbandsmaterial, Desinfektionsmittel)</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Komfort & Schlafplatz</div>
+                        <p>Gewohnte Decke oder Hundebett, eventuell zusätzliche Decken bei kühlen Nächten, Lieblingsspielzeug für Vertrautheit</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Sicherheit & Auslauf</div>
+                        <p>Verschiedene Leinen (kurz für Stellplatz, lang für Wanderungen), Geschirr, Halsband mit Adressanhänger, LED-Leuchtband für Dunkelheit, Hundebox für sicheren Transport</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Hygiene unterwegs</div>
+                        <p>Ausreichend Kotbeutel, Handtücher zum Abtrocknen, Hundeshampoo, eventuell Pfotenwachs für raues Gelände, Bürste/Kamm</p>
+                    </div>
+                </div>
+                
+                <div class="checklist-item">
+                    <div class="checklist-icon">✓</div>
+                    <div class="checklist-content">
+                        <div class="checklist-title">Für den Stellplatz</div>
+                        <p>Transportable Hundeleine zum Einschrauben oder Erdanker mit Spiral-Leine für sicheren Auslauf, Hundezelt oder -gitter für geschützten Außenbereich</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Safety Tips Section -->
+            <section>
+                <h2>Sicherheits-Tipps für den Transport im Camper</h2>
+                <p>Die Sicherheit Ihres Vierbeiners während der Fahrt sollte oberste Priorität haben. Nicht nur zum Schutz Ihres Hundes, sondern auch zu Ihrer eigenen Sicherheit – ein ungesicherter Hund kann bei plötzlichem Bremsen zu einem gefährlichen Geschoss werden.</p>
+                
+                <h3>Die besten Sicherungsmöglichkeiten:</h3>
+                <ul>
+                    <li><strong>Transportbox/Hundebox:</strong> Die sicherste Option. Achten Sie auf ausreichende Größe und Stabilität. Befestigen Sie die Box zusätzlich mit Spanngurten. <a href="#">Unsere Empfehlung: SafePet Transportbox XL</a> (Affiliate-Link)</li>
+                    <li><strong>Hundegurt fürs Auto:</strong> Eine gute Alternative, wenn eine Box nicht passt. Wählen Sie einen geprüften Sicherheitsgurt, der am Geschirr (nicht am Halsband!) befestigt wird</li>
+                    <li><strong>Trenngitter/-netz:</strong> Sinnvoll für größere Camper, um den Hund im hinteren Bereich zu halten. Allein ist diese Maßnahme jedoch nicht ausreichend bei starkem Bremsen</li>
+                </ul>
+                
+                <h3>Wichtige Hinweise für die Fahrt:</h3>
+                <ul>
+                    <li>Planen Sie regelmäßige Pausen ein (alle 2-3 Stunden) für Bewegung und Toilettengang</li>
+                    <li>Sorgen Sie für Frischluftzufuhr, aber vermeiden Sie Zugluft direkt auf den Hund</li>
+                    <li>Stellen Sie sicher, dass frisches Wasser zugänglich ist</li>
+                    <li>Lassen Sie Ihren Hund niemals im geparkten Fahrzeug zurück – die Temperaturen können schnell lebensgefährlich ansteigen</li>
+                </ul>
+            </section>
+            
+            <!-- Dog-friendly Places Section -->
+            <section id="platze">
+                <h2>Hundefreundliche Stellplätze in Europa</h2>
+                <p>Nicht alle Campingplätze sind gleichermaßen für Hunde geeignet. Wir haben drei besonders hundefreundliche Plätze in Europa für Sie getestet:</p>
+                
+                <div class="places-list">
+                    <div class="place-item">
+                        <div class="place-content">
+                            <h3 class="place-title">Camping Hundefreund</h3>
+                            <div class="place-location">
+                                <span>📍 Südtirol, Italien</span>
+                            </div>
+                            <div class="place-features">
+                                <span class="place-feature">Hundedusche</span>
+                                <span class="place-feature">Auslaufgebiet</span>
+                                <span class="place-feature">Hundestrand</span>
+                            </div>
+                            <p>Dieser Campingplatz in malerischer Berglage bietet einen umzäunten Hundepark, spezielle Hundeduschen und sogar einen "Doggy Day Care" Service. Die großzügigen Stellplätze sind durch Hecken getrennt und bieten ausreichend Privatsphäre.</p>
+                            <p><strong>Besonderheit:</strong> Hundewanderwege direkt vom Platz aus, Hundemenü im Platzrestaurant.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="place-item">
+                        <div class="place-content">
+                            <h3 class="place-title">Naturcamping Vier Pfoten</h3>
+                            <div class="place-location">
+                                <span>📍 Ostseeküste, Deutschland</span>
+                            </div>
+                            <div class="place-features">
+                                <span class="place-feature">Hundestrand</span>
+                                <span class="place-feature">Hundetraining</span>
+                                <span class="place-feature">Tierarzt-Service</span>
+                            </div>
+                            <p>Direkt an der Ostsee gelegen mit eigenem Hundestrand-Zugang. Der Platz bietet einen Agility-Parcours, regelmäßige Hundewanderungen in Gruppen und sogar einen Tierarzt, der zweimal wöchentlich vor Ort ist.</p>
+                            <p><strong>Besonderheit:</strong> Wöchentliche Hundetrainings, Hundesitter-Service gegen geringe Gebühr.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="place-item">
+                        <div class="place-content">
+                            <h3 class="place-title">Camping Canins</h3>
+                            <div class="place-location">
+                                <span>📍 Provence, Frankreich</span>
+                            </div>
+                            <div class="place-features">
+                                <span class="place-feature">Hundepool</span>
+                                <span class="place-feature">Hundewiese</span>
+                                <span class="place-feature">Hundebar</span>
+                            </div>
+                            <p>Dieser familiengeführte Platz inmitten von Lavendelfeldern ist ein Paradies für Hunde. Mit eigenem Hundepool zum Abkühlen, weitläufigen Auslaufflächen und sogar einer "Hundebar" mit Erfrischungen für die Vierbeiner.</p>
+                            <p><strong>Besonderheit:</strong> "Yappy Hour" – tägliches soziales Treffen für Hunde und ihre Besitzer mit Leckerlis und Getränken.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ Section -->
+            <section>
+                <h2>Häufig gestellte Fragen zum Camping mit Hund</h2>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Was muss ich bei Reisen mit Hund ins Ausland beachten?</h3>
+                    <div class="faq-answer">
+                        <p>Für Reisen innerhalb der EU benötigen Sie einen gültigen EU-Heimtierausweis mit aktuellen Impfungen, insbesondere Tollwut. Diese muss mindestens 21 Tage vor der Einreise erfolgt sein. Für einige Länder wie Finnland, Irland oder Großbritannien gelten zusätzliche Bestimmungen wie Entwurmungsnachweise. Bei Reisen außerhalb der EU sollten Sie sich frühzeitig über die spezifischen Einreisebestimmungen beim jeweiligen Konsulat oder Tierarzt informieren.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Wie gewöhne ich meinen Hund an das Leben im Camper?</h3>
+                    <div class="faq-answer">
+                        <p>Beginnen Sie mit kurzen Fahrten und steigern Sie langsam die Dauer. Machen Sie den Camper vor der eigentlichen Reise zu einem positiven Ort: Füttern Sie Ihren Hund darin, lassen Sie ihn darin spielen und entspannen. Nehmen Sie vertraute Gegenstände wie Decken und Spielzeug mit. Schaffen Sie eine feste Routine für Fütterung, Gassi-Gehen und Schlafenszeiten. Besonders ängstliche Hunde können von Pheromondiffusoren oder beruhigenden Nahrungsergänzungsmitteln profitieren (sprechen Sie mit Ihrem Tierarzt).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Wie finde ich hundefreundliche Campingplätze?</h3>
+                    <div class="faq-answer">
+                        <p>Es gibt mehrere spezialisierte Plattformen und Apps wie "Camping mit Hund" oder "DogsCamping", die hundefreundliche Plätze auflisten. Auch klassische Campingführer haben oft entsprechende Filter. Achten Sie auf folgende Kriterien: Sind Hunde explizit erlaubt? Gibt es Einschränkungen (Anzahl, Größe, Rasse)? Kostet der Hund extra? Gibt es spezielle Einrichtungen wie Hundedusche oder Auslaufgebiet? Lesen Sie Bewertungen anderer Hundebesitzer. Kontaktieren Sie im Zweifelsfall den Platz direkt – oft sind flexiblere Regelungen möglich als auf der Website angegeben.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Was tun bei extremen Temperaturen im Camper?</h3>
+                    <div class="faq-answer">
+                        <p>Bei Hitze: Parken Sie im Schatten, sorgen Sie für Durchzug, nutzen Sie Kühlmatten, feuchte Handtücher oder tragbare Lüfter. Planen Sie Aktivitäten in die frühen Morgen- oder späten Abendstunden. Stellen Sie immer frisches Wasser bereit und achten Sie auf Anzeichen von Überhitzung (starkes Hecheln, Apathie). Bei Kälte: Isolieren Sie den Schlafplatz Ihres Hundes, bieten Sie zusätzliche Decken an und erwägen Sie bei sehr kaltem Wetter einen Hundepullover. Ein kleiner Heizlüfter kann helfen, aber achten Sie auf Sicherheit. Grundsätzlich gilt: Lassen Sie Ihren Hund niemals allein im Camper zurück, wenn extreme Temperaturen herrschen!</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Download CTA Section -->
+            <section id="download" class="download-section">
+                <h2 class="download-title">Bereit für den Camping-Urlaub mit deinem Vierbeiner?</h2>
+                <p>Lade dir jetzt unsere umfassende Packliste als PDF herunter – so vergisst du garantiert nichts Wichtiges!</p>
+                <a href="#" class="cta-button">Checkliste als PDF herunterladen</a>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Über uns</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Roadtrip Europa - Camping mit Hund. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
