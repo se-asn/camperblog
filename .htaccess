@@ -1,0 +1,27 @@
+# Aktiviere die Rewrite-Engine
+RewriteEngine On
+
+# Wenn die Datei/Verzeichnis nicht existiert, Regeln anwenden
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Entferne die .html-Erweiterung in der URL
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Leite von .html-Endung zur Version ohne Endung um
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html\s [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Konfiguriere die 404-Fehlerseite
+ErrorDocument 404 /404page.html
+
+# Vermeide, dass Dateien im Verzeichnis aufgelistet werden
+Options -Indexes
+
+# Standardzeichensatz setzen
+AddDefaultCharset UTF-8
+
+# Korrekte Inhaltstypen setzen
+AddType application/javascript .js
+AddType text/css .css
+AddType image/webp .webp
