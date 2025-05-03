@@ -1,9 +1,14 @@
 User-agent: *
 Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /download-tracking.js
+
+# Sitemaps
 Sitemap: https://vanmitpfote.de/sitemap.xml
 
-# Optimiert für Crawling-Effizienz
-Crawl-delay: 1
+# Crawl-delay to avoid overloading server
+Crawl-delay: 5
 
 # Keine Duplikate indizieren
 Disallow: */amp/
