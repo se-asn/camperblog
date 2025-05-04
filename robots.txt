@@ -4,10 +4,21 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /download-tracking.js
 
+# Spezifische Anweisungen für Google
+User-agent: Googlebot
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /download-tracking.js
+
+# Spezifische Anweisungen für Bilder
+User-agent: Googlebot-Image
+Allow: /images/
+
 # Sitemaps
 Sitemap: https://vanmitpfote.de/sitemap.xml
 
-# Crawl-delay to avoid overloading server
+# Crawl-rate für nicht-Google Crawler
 Crawl-delay: 5
 
 # Keine Duplikate indizieren
@@ -18,3 +29,8 @@ Disallow: */pdf/
 # Admin-Bereiche schützen
 Disallow: /admin/
 Disallow: /wp-admin/
+
+# Spezifische Ordner explizit erlauben für besseres Crawling
+Allow: /blog/
+Allow: /downloads/
+Allow: /images/

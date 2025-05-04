@@ -1,39 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vanmitpfote.de/</loc>
-    <lastmod>2025-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vanmitpfote.de/camping-mit-hund</loc>
-    <lastmod>2025-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://vanmitpfote.de/artikel/stellplaetze-europa.html</loc>
-    <lastmod>2025-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vanmitpfote.de/campingplatz/hundefreund-suedtirol</loc>
-    <lastmod>2025-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vanmitpfote.de/campingplatz/vier-pfoten-ostsee</loc>
-    <lastmod>2025-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vanmitpfote.de/campingplatz/canins-provence</loc>
-    <lastmod>2025-03-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-</urlset>
+https://vanmitpfote.de/
+https://vanmitpfote.de/blog/campingplatz/
+https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-frankreich.html
+https://vanmitpfote.de/blog/campingplatz/hundefreundlich-suedtirol.html
+https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-ostsee.html
+https://vanmitpfote.de/downloads/camping-mit-hund-checkliste.pdf
+https://vanmitpfote.de/404page.html

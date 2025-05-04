@@ -504,13 +504,13 @@
       /* Places section */
       .places-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "card1 card2" "card3 card3";
         gap: 2rem;
         margin-top: 2rem;
       }
 
       .place-item {
-        background-color: var(--color-sand);
         border-radius: var(--border-radius);
         overflow: hidden;
         box-shadow: var(--shadow-soft);
@@ -1129,12 +1129,9 @@
             für eine entspannte Urlaubsatmosphäre.
           </p>
           <p>
-            Für besonders aktive Hunde bieten sich dabei
-            <a href="/artikel/stellplaetze-europa.html"
-              >hundefreundliche Stellplätze in Europa</a
-            >
-            an, die Auslaufmöglichkeiten und oft sogar spezielle Hundeflächen
-            bieten.
+            Für besonders aktive Hunde bieten sich dabei hundefreundliche
+            Stellplätze in Europa > an, die Auslaufmöglichkeiten und oft sogar
+            spezielle Hundeflächen bieten.
           </p>
           <h3>Gute Vorbereitung ist entscheidend</h3>
           <p>
@@ -1567,13 +1564,13 @@
               <div class="place-content">
                 <img
                   src="/images/vier-pfoten-ostsee.webp"
-                  alt="Naturcamping Vier Pfoten an der Ostsee mit Hunden am Strand"
+                  alt="Hunde am Ostseestrand beim Camping Vier Pfoten"
                   class="place-image"
                   width="300"
                   height="200"
                   loading="lazy"
                 />
-                <h3 class="place-title">Naturcamping Vier Pfoten</h3>
+                <h3 class="place-title">Hunde-Camping Ostseeperle</h3>
                 <div class="place-location">
                   <span>📍 Ostseeküste, Deutschland</span>
                 </div>
@@ -1648,67 +1645,143 @@
         </section>
         <!-- Countries Overview Section -->
         <section id="erlaubt">
-          <h2>Wo ist Camping mit Hund erlaubt? (Länderübersicht 2025)</h2>
-          <div class="table-responsive">
-            <table class="countries-table">
+            <h2>Wo ist Camping mit Hund erlaubt? (Länderübersicht 2025)</h2>
+            <div class="countries-overview">
+            <div class="table-responsive">
+              <table class="countries-table">
               <thead>
                 <tr>
-                  <th>Land</th>
-                  <th>Hunde erlaubt</th>
-                  <th>Besondere Regelungen</th>
+                <th>Land</th>
+                <th>Hunde erlaubt</th>
+                <th>Besondere Regelungen</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Deutschland</td>
-                  <td>✅ Ja, auf den meisten Plätzen</td>
-                  <td>
-                    Häufig kostenpflichtig (3-8€/Tag), selten Rasseverbote
-                  </td>
+                <td><strong>Deutschland</strong></td>
+                <td><span class="status-allowed">✅ Ja, auf den meisten Plätzen</span></td>
+                <td>Häufig kostenpflichtig (3-8€/Tag), selten Rasseverbote</td>
                 </tr>
                 <tr>
-                  <td>Österreich</td>
-                  <td>✅ Ja, überwiegend</td>
-                  <td>
-                    Leinenpflicht, teilweise Maulkorbpflicht in
-                    Gemeinschaftsbereichen
-                  </td>
+                <td><strong>Österreich</strong></td>
+                <td><span class="status-allowed">✅ Ja, überwiegend</span></td>
+                <td>Leinenpflicht, teilweise Maulkorbpflicht in Gemeinschaftsbereichen</td>
                 </tr>
                 <tr>
-                  <td>Italien</td>
-                  <td>⚠️ Teilweise</td>
-                  <td>
-                    Regionale Unterschiede, besonders hundefreundlich in
-                    Südtirol
-                  </td>
+                <td><strong>Italien</strong></td>
+                <td><span class="status-partial">⚠️ Teilweise</span></td>
+                <td>Regionale Unterschiede, besonders hundefreundlich in Südtirol</td>
                 </tr>
                 <tr>
-                  <td>Frankreich</td>
-                  <td>✅ Ja, sehr hundefreundlich</td>
-                  <td>Viele spezielle Hundeplätze, selten Extrakosten</td>
+                <td><strong>Frankreich</strong></td>
+                <td><span class="status-allowed">✅ Ja, sehr hundefreundlich</span></td>
+                <td>Viele spezielle Hundeplätze, selten Extrakosten</td>
                 </tr>
                 <tr>
-                  <td>Spanien</td>
-                  <td>⚠️ Teilweise</td>
-                  <td>Strandverbote im Sommer, teilweise Rasseverbote</td>
+                <td><strong>Spanien</strong></td>
+                <td><span class="status-partial">⚠️ Teilweise</span></td>
+                <td>Strandverbote im Sommer, teilweise Rasseverbote</td>
                 </tr>
                 <tr>
-                  <td>Kroatien</td>
-                  <td>✅ Ja, mit Einschränkungen</td>
-                  <td>Hundestrände separat ausgewiesen, Leinenpflicht</td>
+                <td><strong>Kroatien</strong></td>
+                <td><span class="status-allowed">✅ Ja, mit Einschränkungen</span></td>
+                <td>Hundestrände separat ausgewiesen, Leinenpflicht</td>
                 </tr>
                 <tr>
-                  <td>Schweden</td>
-                  <td>✅ Ja, sehr hundefreundlich</td>
-                  <td>Kaum Einschränkungen, viele Naturcampingplätze</td>
+                <td><strong>Schweden</strong></td>
+                <td><span class="status-allowed">✅ Ja, sehr hundefreundlich</span></td>
+                <td>Kaum Einschränkungen, viele Naturcampingplätze</td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-          <p>
-            <strong>Wichtig:</strong> Informiere dich vor deiner Reise immer
-            direkt beim Campingplatz über aktuelle Regelungen für Hunde. Auch
-            innerhalb eines Landes können die Bestimmungen stark variieren.
+              </table>
+            </div>
+            <div class="note-box"></div>
+              <strong>Wichtig:</strong> Informiere dich vor deiner Reise immer direkt beim Campingplatz über aktuelle Regelungen für Hunde. Auch innerhalb eines Landes können die Bestimmungen stark variieren.
+            </div>
+            </div>
+
+            <style>
+            .countries-overview {
+              background-color: var(--color-sand);
+              border-radius: var(--border-radius);
+              padding: 1.5rem;
+              margin: 2rem 0;
+              box-shadow: var(--shadow-soft);
+            }
+            
+            .table-responsive {
+              overflow-x: auto;
+              margin-bottom: 1rem;
+            }
+            
+            .countries-table {
+              width: 100%;
+              border-collapse: separate;
+              border-spacing: 0;
+              margin-bottom: 1rem;
+              background-color: white;
+              border-radius: var(--border-radius);
+              overflow: hidden;
+            }
+            
+            .countries-table th {
+              background-color: var(--color-accent);
+              color: white;
+              text-align: left;
+              padding: 1rem;
+              font-weight: 600;
+            }
+            
+            .countries-table th:first-child {
+              border-top-left-radius: var(--border-radius);
+            }
+            
+            .countries-table th:last-child {
+              border-top-right-radius: var(--border-radius);
+            }
+            
+            .countries-table td {
+              padding: 0.8rem 1rem;
+              border-bottom: 1px solid #eee;
+            }
+            
+            .countries-table tr:last-child td {
+              border-bottom: none;
+            }
+            
+            .countries-table tr:hover {
+              background-color: rgba(245, 245, 245, 0.5);
+            }
+            
+            .status-allowed {
+              color: #2e7d32;
+              font-weight: 500;
+            }
+            
+            .status-partial {
+              color: #f57c00;
+              font-weight: 500;
+            }
+            
+            .note-box {
+              background-color: white;
+              border-left: 3px solid var(--color-accent);
+              padding: 1rem;
+              border-radius: var(--border-radius);
+              font-size: 0.95rem;
+            }
+            
+            @media (max-width: 768px) {
+              .countries-table th, 
+              .countries-table td {
+              padding: 0.7rem;
+              }
+              
+              .countries-overview {
+              padding: 1rem;
+              }
+            }
+            </style>
           </p>
         </section>
         <!-- FAQ Section -->
