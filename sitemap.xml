@@ -21,6 +21,26 @@
       <image:title>Camping mit Hund - Golden Retriever vor Wohnmobil</image:title>
       <image:caption>Die besten Tipps für deinen Campingurlaub mit Hund in Europa</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://vanmitpfote.de/images/expert-jan.webp</image:loc>
+      <image:title>Jan - Camping-Experte</image:title>
+      <image:caption>Zertifizierter Hundetrainer und Camping-Experte</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vanmitpfote.de/images/hund-transportbox.webp</image:loc>
+      <image:title>Hund in Transportbox im Wohnmobil</image:title>
+      <image:caption>Sichere Transportmethode für Hunde im Wohnmobil</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vanmitpfote.de/images/hund-sicherheitsgurt.webp</image:loc>
+      <image:title>Hund mit Sicherheitsgurt im Wohnmobil</image:title>
+      <image:caption>Sicherheitsgurt als sichere Option für Hunde beim Camping</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vanmitpfote.de/images/hund-trenngitter-trennschutz.webp</image:loc>
+      <image:title>Labrador hinter Trenngitter im Wohnmobil</image:title>
+      <image:caption>Trenngitter zur sicheren Abtrennung von Hunden im Fahrzeug</image:caption>
+    </image:image>
   </url>
 
   <!-- Blog-Hauptkategorien -->
@@ -41,6 +61,11 @@
       <image:loc>https://vanmitpfote.de/images/canins-provence.webp</image:loc>
       <image:title>Die 10 besten hundefreundlichen Campingplätze in Frankreich 2025</image:title>
       <image:caption>Camping Canins in der Provence mit Hundepool und großen Auslaufflächen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vanmitpfote.de/images/expert-jan.webp</image:loc>
+      <image:title>Jan - Camping-Experte für Frankreich</image:title>
+      <image:caption>Camping-Experte & Hundetrainer mit Spezialwissen zu Frankreich</image:caption>
     </image:image>
   </url>
 
@@ -74,6 +99,28 @@
     <lastmod>2025-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Statische Ressourcen -->
+  <url>
+    <loc>https://vanmitpfote.de/css/style.css</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://vanmitpfote.de/js/download-tracking.js</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://vanmitpfote.de/images/favicon.svg</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 
   <!-- 404-Seite -->
