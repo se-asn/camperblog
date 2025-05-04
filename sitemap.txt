@@ -4,4 +4,7 @@ https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-frankre
 https://vanmitpfote.de/blog/campingplatz/hundefreundlich-suedtirol.html
 https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-ostsee.html
 https://vanmitpfote.de/downloads/camping-mit-hund-checkliste.pdf
+https://vanmitpfote.de/css/style.css
+https://vanmitpfote.de/js/download-tracking.js
+https://vanmitpfote.de/images/favicon.svg
 https://vanmitpfote.de/404page.html
