@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
-Disallow: /js/
 Disallow: /css/
-Disallow: /download-tracking.js
+Disallow: /js/
+
+# Erlaubt wichtige Ressourcen
+Allow: /images/
+Allow: /downloads/
+
+# XML-Sitemap
+Sitemap: https://vanmitpfote.de/sitemap.xml
 
 # Spezifische Anweisungen für Google
 User-agent: Googlebot
@@ -14,9 +20,6 @@ Disallow: /download-tracking.js
 # Spezifische Anweisungen für Bilder
 User-agent: Googlebot-Image
 Allow: /images/
-
-# Sitemaps
-Sitemap: https://vanmitpfote.de/sitemap.xml
 
 # Crawl-rate für nicht-Google Crawler
 Crawl-delay: 5
