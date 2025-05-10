@@ -27,7 +27,7 @@
       property="og:image"
       content="https://vanmitpfote.de/images/hero.webp"
     />
-    <link rel="canonical" href="https://vanmitpfote.de/" />
+    <link rel="canonical" href="https://www.vanmitpfote.de/" />
     
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
@@ -48,7 +48,20 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-9HHXJ9XTX9');
+      
+      // Track 404 errors
+      if (window.location.pathname.includes('404') || document.title.includes('404') || document.title.includes('Not Found')) {
+        gtag('event', 'page_view', {
+          page_title: '404 - Page Not Found',
+          page_location: window.location.href,
+          page_path: window.location.pathname,
+          send_to: 'G-9HHXJ9XTX9'
+        });
+      }
     </script>
+    
+    <!-- Include download tracking script -->
+    <script src="/js/download-tracking.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

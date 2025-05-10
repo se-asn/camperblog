@@ -3,18 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seite nicht gefunden - Van mit Pfote</title>
+    <title>404 - Seite nicht gefunden | Van mit Pfote</title>
     <meta name="robots" content="noindex, follow" />
-    <meta
-      name="description"
-      content="Die gewünschte Seite konnte nicht gefunden werden. Zurück zur Startseite oder stöbern Sie in unseren Inhalten."
-    />
-    <meta name="theme-color" content="#3e7e6b" />
-    <!-- Google Search Console Verifikation -->
-    <meta name="google-site-verification" content="G-9HHXJ9XTX9" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://vanmitpfote.de/404page.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <!-- Google Analytics Tag (GA4) -->
     <script
@@ -28,10 +25,28 @@
       }
       gtag("js", new Date());
       gtag("config", "G-9HHXJ9XTX9");
+
+      // Track 404 errors with the page that was attempted to be accessed
+      gtag("event", "page_view", {
+        page_title: "404 - Seite nicht gefunden",
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+        send_to: "G-9HHXJ9XTX9",
+      });
+
+      // Track additional 404 error details
+      gtag("event", "404_error", {
+        event_category: "Error",
+        event_label:
+          "Page not found: " +
+          window.location.pathname +
+          " from referrer: " +
+          document.referrer,
+        non_interaction: true,
+      });
     </script>
 
     <style>
-      /* Critical above-the-fold CSS */
       :root {
         --color-background: #fdfdfd;
         --color-text: #333333;
@@ -46,21 +61,43 @@
         --font-size-base: clamp(1rem, 1vw + 0.75rem, 1.125rem);
       }
 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         font-size: var(--font-size-base);
         line-height: 1.6;
         color: var(--color-text);
         background-color: var(--color-background);
-        margin: 0;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
       }
 
+      .container {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--spacing);
+      }
+
       header {
         padding: 1.5rem 0;
         border-bottom: 1px solid var(--color-sand);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
       .logo {
@@ -69,6 +106,8 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        text-decoration: none;
+        color: var(--color-text);
       }
 
       .logo-emoji {
@@ -76,89 +115,216 @@
       }
 
       main {
-        flex-grow: 1;
+        flex: 1;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 4rem var(--spacing);
         text-align: center;
       }
 
       .error-container {
-        max-width: 800px;
+        max-width: 600px;
+        margin: 0 auto;
         padding: 2rem;
-        background-color: var(--color-sand);
+        background-color: white;
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-soft);
+        border: 1px solid var(--color-sand);
+      }
+
+      .error-emoji {
+        font-size: 4rem;
+        margin-bottom: 1rem;
       }
 
       h1 {
-        font-size: clamp(2rem, 5vw, 3rem);
+        font-size: 2.5rem;
         margin-bottom: 1rem;
         color: var(--color-text);
       }
 
-      p {
-        color: var(--color-text-light);
+      .error-message {
         margin-bottom: 2rem;
+        color: var(--color-text-light);
       }
 
-      a.button {
+      .broken-link-report {
+        background-color: var(--color-sand);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: var(--color-text-light);
+      }
+
+      .broken-link-info {
+        margin-bottom: 0.5rem;
+        word-break: break-all;
+      }
+
+      .suggestions {
+        margin: 2rem 0;
+      }
+
+      .suggestions-title {
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .suggestion-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style: none;
+      }
+
+      .suggestion-list a {
+        color: var(--color-accent);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-sand);
+        border-radius: var(--border-radius);
+        transition: all 0.2s ease;
+      }
+
+      .suggestion-list a:hover {
+        background-color: var(--color-accent-light);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .cta-button {
         display: inline-block;
         background-color: var(--color-accent);
         color: white;
         padding: 0.75rem 1.5rem;
         border-radius: var(--border-radius);
         font-weight: 600;
+        box-shadow: var(--shadow-soft);
         text-decoration: none;
-        transition: background-color 0.2s ease, transform 0.2s ease;
+        margin-top: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease,
+          background-color 0.2s ease;
       }
 
-      a.button:hover {
-        background-color: var(--color-accent-light);
+      .cta-button:hover {
         transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        background-color: var(--color-accent-light);
+        color: white;
       }
 
       footer {
         padding: var(--spacing) 0;
-        background-color: var(--color-sand);
         text-align: center;
-        margin-top: auto;
+        background-color: var(--color-sand);
       }
 
       .copyright {
         color: var(--color-text-light);
         font-size: 0.9rem;
       }
+
+      @media (max-width: 768px) {
+        .error-emoji {
+          font-size: 3rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="/" class="logo">
-          <span class="logo-emoji">🚐</span>
-          <span>Van mit Pfote</span>
-        </a>
+        <nav>
+          <a href="/" class="logo">
+            <span class="logo-emoji">🐾</span>
+            <span>Van mit Pfote</span>
+          </a>
+        </nav>
       </div>
     </header>
 
     <main>
       <div class="error-container">
-        <h1>Seite nicht gefunden</h1>
-        <p>
-          Die gewünschte Seite konnte nicht gefunden werden. Bitte überprüfen
-          Sie die URL oder kehren Sie zur Startseite zurück.
+        <div class="error-emoji">🧭</div>
+        <h1>Ups! Seite nicht gefunden</h1>
+        <p class="error-message">
+          Es tut uns leid, aber die gesuchte Seite existiert nicht oder wurde
+          möglicherweise umbenannt oder verschoben.
         </p>
-        <a href="/" class="button">Zurück zur Startseite</a>
+
+        <div class="broken-link-report">
+          <p class="broken-link-info" id="requested-url">
+            Gesuchte URL: <strong>/</strong>
+          </p>
+          <p class="broken-link-info" id="referring-page">
+            Von Seite: <strong>Direkte Eingabe</strong>
+          </p>
+        </div>
+
+        <div class="suggestions">
+          <h2 class="suggestions-title">
+            Vielleicht interessieren dich diese Seiten:
+          </h2>
+          <ul class="suggestion-list">
+            <li><a href="/">Startseite</a></li>
+            <li>
+              <a href="/blog/campingplatz/hundefreundlich-suedtirol.html"
+                >Hundefreundliche Campingplätze in Südtirol</a
+              >
+            </li>
+            <li>
+              <a
+                href="/blog/campingplatz/hundefreundliche-campingplaetze-frankreich.html"
+                >Hundefreundliche Campingplätze in Frankreich</a
+              >
+            </li>
+            <li>
+              <a
+                href="/blog/campingplatz/hundefreundliche-campingplaetze-ostsee.html"
+                >Hundefreundliche Campingplätze an der Ostsee</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a href="/" class="cta-button">Zurück zur Startseite</a>
       </div>
     </main>
 
     <footer>
       <div class="container">
         <div class="copyright">
-          <p>&copy; 2025 Van mit Pfote. Alle Rechte vorbehalten.</p>
+          <p>
+            &copy; 2025 Van mit Pfote - Camping mit Hund. Alle Rechte
+            vorbehalten.
+          </p>
         </div>
       </div>
     </footer>
+
+    <script>
+      // Extract requested URL and referring page for better error tracking
+      document.addEventListener("DOMContentLoaded", function () {
+        const requestedUrlElement = document.getElementById("requested-url");
+        const referringPageElement = document.getElementById("referring-page");
+
+        // Display requested URL
+        const currentPath = window.location.pathname;
+        requestedUrlElement.innerHTML =
+          "Gesuchte URL: <strong>" + currentPath + "</strong>";
+
+        // Display referrer information
+        const referrer = document.referrer || "Direkte Eingabe";
+        referringPageElement.innerHTML =
+          "Von Seite: <strong>" + referrer + "</strong>";
+      });
+    </script>
   </body>
 </html>

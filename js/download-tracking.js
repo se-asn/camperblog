@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // Find all download links
   const downloadLinks = document.querySelectorAll("a[download]");
 
+  // Function to check if user is likely a bot
+  function isBot() {
+    return /bot|googlebot|crawler|spider|robot|crawling/i.test(
+      navigator.userAgent
+    );
+  }
+
   // Add click event listeners to track downloads
   downloadLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
@@ -36,12 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
       // Log to console for testing
       console.log(`Download erfasst: ${fileName} von Seite ${pageName}`);
 
-      // Show thank you message with delay
-      setTimeout(() => {
-        alert(
-          "Danke für den Download! Wir wünschen dir einen wunderbaren Campingurlaub mit deinem Vierbeiner!"
-        );
-      }, 1000);
+      // Only show alert to human users, not to bots
+      if (!isBot()) {
+        setTimeout(() => {
+          alert(
+            "Danke für den Download! Wir wünschen dir einen wunderbaren Campingurlaub mit deinem Vierbeiner!"
+          );
+        }, 1000);
+      }
     });
   });
 });
