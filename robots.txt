@@ -8,7 +8,7 @@ Allow: /images/
 Allow: /downloads/
 
 # XML-Sitemap
-Sitemap: https://vanmitpfote.de/sitemap.xml
+Sitemap: https://www.vanmitpfote.de/sitemap.xml
 
 # Spezifische Anweisungen für Google
 User-agent: Googlebot
