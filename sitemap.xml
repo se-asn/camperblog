@@ -43,13 +43,6 @@
     </image:image>
   </url>
 
-  <!-- Blog-Hauptkategorien -->
-  <url>
-    <loc>https://vanmitpfote.de/blog/campingplatz/</loc>
-    <lastmod>2025-05-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- Hauptartikel -->
   <url>
