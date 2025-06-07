@@ -105,15 +105,7 @@
     <loc>https://www.vanmitpfote.de/js/download-tracking.js</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.vanmitpfote.de/images/favicon.svg</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
+    <priority>0.3</priority>  </url>
 
   <!-- 404-Seite -->
   <url>
