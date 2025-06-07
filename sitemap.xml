@@ -9,35 +9,34 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
             http://www.google.com/schemas/sitemap-image/1.1
             http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
-
   <!-- Homepage -->
   <url>
-    <loc>https://vanmitpfote.de/</loc>
+    <loc>https://www.vanmitpfote.de/</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/hero.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/hero.webp</image:loc>
       <image:title>Camping mit Hund - Golden Retriever vor Wohnmobil</image:title>
       <image:caption>Die besten Tipps für deinen Campingurlaub mit Hund in Europa</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/expert-jan.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/expert-jan.webp</image:loc>
       <image:title>Jan - Camping-Experte</image:title>
       <image:caption>Zertifizierter Hundetrainer und Camping-Experte</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/hund-transportbox.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/hund-transportbox.webp</image:loc>
       <image:title>Hund in Transportbox im Wohnmobil</image:title>
       <image:caption>Sichere Transportmethode für Hunde im Wohnmobil</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/hund-sicherheitsgurt.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/hund-sicherheitsgurt.webp</image:loc>
       <image:title>Hund mit Sicherheitsgurt im Wohnmobil</image:title>
       <image:caption>Sicherheitsgurt als sichere Option für Hunde beim Camping</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/hund-trenngitter-trennschutz.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/hund-trenngitter-trennschutz.webp</image:loc>
       <image:title>Labrador hinter Trenngitter im Wohnmobil</image:title>
       <image:caption>Trenngitter zur sicheren Abtrennung von Hunden im Fahrzeug</image:caption>
     </image:image>
@@ -46,41 +45,41 @@
 
   <!-- Hauptartikel -->
   <url>
-    <loc>https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-frankreich.html</loc>
+    <loc>https://www.vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-frankreich.html</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/canins-provence.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/canins-provence.webp</image:loc>
       <image:title>Die 10 besten hundefreundlichen Campingplätze in Frankreich 2025</image:title>
       <image:caption>Camping Canins in der Provence mit Hundepool und großen Auslaufflächen</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/expert-jan.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/expert-jan.webp</image:loc>
       <image:title>Jan - Camping-Experte für Frankreich</image:title>
       <image:caption>Camping-Experte &amp; Hundetrainer mit Spezialwissen zu Frankreich</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://vanmitpfote.de/blog/campingplatz/hundefreundlich-suedtirol.html</loc>
+    <loc>https://www.vanmitpfote.de/blog/campingplatz/hundefreundlich-suedtirol.html</loc>
     <lastmod>2025-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/hundefreund-suedtirol.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/hundefreund-suedtirol.webp</image:loc>
       <image:title>Hundefreundliche Campingplätze in Südtirol</image:title>
       <image:caption>Top 3 Campingplätze für Hunde in Südtirol mit spektakulärer Bergkulisse</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-ostsee.html</loc>
+    <loc>https://www.vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-ostsee.html</loc>
     <lastmod>2025-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://vanmitpfote.de/images/vier-pfoten-ostsee.webp</image:loc>
+      <image:loc>https://www.vanmitpfote.de/images/vier-pfoten-ostsee.webp</image:loc>
       <image:title>Hundefreundliche Campingplätze an der Ostsee</image:title>
       <image:caption>Naturcamping Vier Pfoten - Hundefreundliches Camping direkt am Ostseestrand</image:caption>
     </image:image>
@@ -88,7 +87,7 @@
 
   <!-- Download-Ressource -->
   <url>
-    <loc>https://vanmitpfote.de/downloads/camping-mit-hund-checkliste.pdf</loc>
+    <loc>https://www.vanmitpfote.de/downloads/camping-mit-hund-checkliste.pdf</loc>
     <lastmod>2025-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -96,21 +95,21 @@
 
   <!-- Statische Ressourcen -->
   <url>
-    <loc>https://vanmitpfote.de/css/style.css</loc>
+    <loc>https://www.vanmitpfote.de/css/style.css</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://vanmitpfote.de/js/download-tracking.js</loc>
+    <loc>https://www.vanmitpfote.de/js/download-tracking.js</loc>
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://vanmitpfote.de/images/favicon.svg</loc>
+    <loc>https://www.vanmitpfote.de/images/favicon.svg</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
@@ -118,7 +117,7 @@
 
   <!-- 404-Seite -->
   <url>
-    <loc>https://vanmitpfote.de/404page.html</loc>
+    <loc>https://www.vanmitpfote.de/404page.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
