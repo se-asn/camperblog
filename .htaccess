@@ -1,6 +1,13 @@
 # Aktiviere die Rewrite-Engine
 RewriteEngine On
 
+# Specific redirects for old/non-existent pages
+Redirect 301 /blog/campingplatz/ https://www.vanmitpfote.de/
+Redirect 301 /blog/campingplatz/naturcamping-vier-pfoten https://www.vanmitpfote.de/blog/campingplatz/hundefreundliche-campingplaetze-ostsee
+Redirect 301 /camping-mit-hund https://www.vanmitpfote.de/
+Redirect 301 /ueber-uns https://www.vanmitpfote.de/
+Redirect 301 /ueber-uns/hunde-experten.html https://www.vanmitpfote.de/
+
 # Wenn die Datei/Verzeichnis nicht existiert, Regeln anwenden
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
