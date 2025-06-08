@@ -88,28 +88,4 @@
     <lastmod>2025-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <!-- Statische Ressourcen -->
-  <url>
-    <loc>https://www.vanmitpfote.de/css/style.css</loc>
-    <lastmod>2025-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://www.vanmitpfote.de/js/download-tracking.js</loc>
-    <lastmod>2025-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>  </url>
-
-  <!-- 404-Seite -->
-  <url>
-    <loc>https://www.vanmitpfote.de/404page.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
-</urlset>
+  </url></urlset>
